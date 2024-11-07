@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Seat Booking</h1>
+        <label for="movie">Select a Movie:</label>
+        <select id="movie">
+            <option value="221">Select a movie</option>
+            <option value="220" data-trailer="C:\Users\vigne\Desktop\Html basics\Portfol\New folder\movie-seat-booking-main\GOAT.mp4">Goat (RS.220)</option>
+            <option value="220" data-trailer="C:\Users\vigne\Desktop\Html basics\Portfol\New folder\movie-seat-booking-main\nkp.mp4">Nerkonda Paarvai (RS. 220)</option>
+            <option value="180" data-trailer="C:\Users\vigne\Desktop\Html basics\Portfol\New folder\movie-seat-booking-main\rrr.mp4">RRR (RS.180)</option>
+            <option value="190" data-trailer="C:\Users\vigne\Desktop\Html basics\Portfol\New folder\movie-seat-booking-main\ff9.mp4">F9 (RS.190)</option>
+        </select>
+        
+        <div class="seating-area">
+            <!-- Video Trailer in place of the screen -->
+            <div class="screen-container">
+                <video id="movie-trailer" width="560" height="315" autoplay loop style="display: block; margin: 0 auto;">
+                    <source src="C:\Users\vigne\Desktop\Html basics\Portfol\New folder\movie-seat-booking-main\GOAT.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+                <p>Screen this side!!</p>
+
+            <!-- Expanded Seat layout -->
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+            </div>
+            <div class="row">
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat sold"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        
+        <p class="info">
+            You have selected <span id="count">0</span> seat(s) for a total of RS.<span id="total">0</span>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

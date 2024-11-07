@@ -1,0 +1,69 @@
+body {
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.seating-area {
+    margin: 20px 0;
+}
+
+/* Screen styling with glow and 3D effect */
+.screen-container {
+    position: flex;
+    margin: 0 auto;
+}
+
+#movie-trailer {
+    border-radius: 20px; /* Slight curve to the edges */
+    overflow: hidden;
+    transition: all 1s ease-in-out; /* Animation for a smooth glow transition */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.seat {
+    background-color: #444451;
+    height: 26px;
+    width: 32px;
+    margin: 3px;
+    font-size: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seat.selected {
+    background-color: #28a745;
+}
+
+.seat.sold {
+    background-color: #dc3545;
+    cursor: not-allowed;
+}
+
+.info {
+    margin-top: 20px;
+}
